@@ -4,12 +4,14 @@ const path = require('path');
 const portfolios = require("./routes/api/portfolios");
 
 const server = express();
-const mongodbURI = "URI"
 
-mongoose
-  .connect(mongodbURI)
-  .then(() => console.log("Connected to MongoDB successfully"))
-  .catch((err) => console.log(err));
+// This needs to get fixed
+// const mongodbURI = "URI"
+
+// mongoose
+//   .connect(mongodbURI)
+//   .then(() => console.log("Connected to MongoDB successfully"))
+//   .catch((err) => console.log(err));
 
 const port = process.env.PORT || 5000;
 
