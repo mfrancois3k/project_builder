@@ -1,4 +1,4 @@
-const db = require('../db')
+const db = require('./db')
 const ProfolioModel = require('../models/Portfolio')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -26,11 +26,11 @@ const main = async () => {
                     link: 'www.google.com'
                 }
             ]
-        },
+        }
 
+        ]
   await PortfolioModel.insertMany( portfolios)
   console.log("Created portfolio!")
-    ]
 }
 
 const run = async () => {
